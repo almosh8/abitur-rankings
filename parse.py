@@ -3,7 +3,7 @@ def parse():
     roles_info = {}
 
     for i in range(19):
-        file1 = open(f'list - Copy ({i}).txt', 'r', encoding="utf-8")
+        file1 = open(f'data/list - Copy ({i}).txt', 'r', encoding="utf-8")
         lines = file1.readlines()
         lines = list(filter(lambda line: line.startswith('Конкурсная группа') or
                                             line.startswith('Количество мест для зачисления') or
